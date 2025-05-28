@@ -1,4 +1,73 @@
-html {
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+}
+
+:root[data-bs-theme="light"] {
+  --bs-body-bg: #FFFFF0;
+  --bs-body-color: #363636;
+}
+
+:root[data-bs-theme="dark"] {
+  --bs-body-bg: #212529;
+  --bs-body-color: #f8f9fa;
+}
+
+h2, .card-title, .navbar-brand {
+  font-family: 'Georgia', serif;
+}
+
+#toggleMode {
+  transition: 0.3s;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+
+footer {
+  font-size: 0.9rem;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: #fff;
+  width: 90%;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  margin: 0;
+}
+
+#toggleMode {
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 6px 18px;
+  transition: all 0.3s ease;
+  border-width: 2px;
+}
+
+#toggleMode:hover {
+  opacity: 0.9;
+}
+
+.carousel-noticias {
+  max-width: 800px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-noticias img {
+  object-fit: cover;
   height: 100%;
-  width: 100%;
 }
